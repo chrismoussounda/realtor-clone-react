@@ -3,18 +3,19 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import './App.css';
 import Home from './pages/Home.jsx';
 import Profile from './pages/Profile.jsx';
 import Offers from './pages/Offers.jsx';
 import ForgotPassword from './pages/ForgotPassword.jsx';
 import SignIn from './pages/SignIn.jsx';
 import SignUp from './pages/SignUp.jsx';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/offers" element={<Offers />}></Route>
