@@ -4,7 +4,6 @@ export default function Header() {
   const navigate = useNavigate();
   const pathMatchRoute = (route) =>
     location.pathname === route ? 'text-black border-b-red-500' : '';
-  console.log(location.pathname);
   return (
     <div className="bg-white border-b shadow-sm sticky top-0 z-50">
       <header className="flex justify-between items-center px-3 max-w-6xl mx-auto">
@@ -40,7 +39,7 @@ export default function Header() {
               )}`}
               onClick={() => navigate('/sign-in')}
             >
-              Sign In
+              Sign in
             </li>
           </ul>
         </div>
